@@ -8,7 +8,7 @@ cron "5 4,7,14,20 * * *" script-path=jd_fruits.js,tag=东东农场
 export DO_TEN_WATER_AGAIN="1" 攒水滴
 */
 require('global-agent/bootstrap');
-global.GLOBAL_AGENT.HTTP_PROXY="http://43.138.20.210:9999";
+global.GLOBAL_AGENT.HTTP_PROXY="http://43.138.20.210:9998";
 
 const $ = new Env('东东农场');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
