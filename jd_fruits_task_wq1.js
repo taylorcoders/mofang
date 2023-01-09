@@ -8,7 +8,7 @@ cron "5 5,12,17 * * *" script-path=jd_fruit.js,tag=东东农场
 export DO_TEN_WATER_AGAIN="1"  攒水滴
 */
 require('global-agent/bootstrap');
-global.GLOBAL_AGENT.HTTP_PROXY="http://43.138.20.210:9998";
+global.GLOBAL_AGENT.HTTP_PROXY="http://43.138.20.210:9996";
 const $ = new Env('东东农场互助版');
 let cookiesArr = [], cookie = '', isBox = false, notify,allMessage = '';
 //助力好友分享码(最多3个,否则后面的助力失败),原因:京东农场每人每天只有3次助力机会
