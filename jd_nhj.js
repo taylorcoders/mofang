@@ -5,8 +5,7 @@
 export CODE1212="xxxxxxx"
 cron "0 0,10,20 29-31,1-15 12,1 *" jd_nhj.js
 */
-require('global-agent/bootstrap');
-global.GLOBAL_AGENT.HTTP_PROXY="http://43.138.20.210:9996";
+
 const $ = new Env('年货节');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
